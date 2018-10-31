@@ -1,0 +1,25 @@
+#paranoia img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #desktop {
+        display: none;
+    }
+    #smal {
+        display: none;
+    }
+    #mobiel {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #desktop {
+        display: none;
+    }
+    #smal {
+        display: 100%;
+    }
+
+}

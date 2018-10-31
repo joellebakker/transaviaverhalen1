@@ -1,0 +1,535 @@
+/* ------officiele lettertype, basisinstellingen --------- */
+
+@font-face {
+    src: url(../lettertype/Nexalight.otf);
+    font-family: nexa;
+}
+
+@font-face {
+    src: url(../lettertype/NexaBold.otf);
+    font-family: nexabold;
+}
+
+@font-face {
+    src: url(../lettertype/Poppins-ExtraLight.ttf);
+    font-family: poppinslight;
+}
+
+@font-face {
+    src: url(../lettertype/Poppins-SemiBold.ttf);
+    font-family: poppinsbold;
+}
+
+
+body {
+    background-color: #ebd9c9;
+    font-family: 'nexa', 'poppinslight';
+    width: 100%;
+    height: 100%;
+    margin: 0em;
+    padding: 0em;
+    line-height: 1.5em;
+    font-size: 1em;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'nexabold', 'poppinsbold';
+    color: #2a3280;
+}
+
+a {
+    text-decoration: none;
+    color: #2a3280;
+}
+
+h2 {
+    text-align: center;
+    margin: 2em auto 0em auto;
+    font-size: 1.5em;
+}
+
+/* --------------------header------------------------------  */
+
+#index {
+    background-image: url(../achtergrond/achtergrondtransavia.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 22em;
+    width: 100%;
+    z-index: -1;
+}
+
+h1 {
+    color: #15038C;
+    margin: 2em 1em 0em 0.5em;
+    font-size: 2em;
+}
+
+
+/* ------------------------nav-------------------------------*/
+
+nav,
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+.menuItems,
+.dropdown {
+    float: left;
+
+}
+
+
+.menuItems a,
+.dropbtn,
+.dropItems a {
+    display: block;
+    color: #75bd81;
+    text-align: center;
+    padding: 1em 1.2em;
+    text-decoration: none;
+
+}
+
+
+
+
+.menuItems a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #15038C;
+
+}
+
+
+.dropdown .dropbtn {
+    font-size: 1em;
+    border: none;
+    outline: none;
+    color: #75bd81;
+    padding: 1em 1.2em;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+
+}
+
+
+.dropdown {
+    display: block;
+    text-align: center;
+
+}
+
+.menuItems a {
+    display: block;
+    text-align: center;
+    padding: 1em 1.2em;
+
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 10em;
+    box-shadow: 0em 0.5em 1.2em 0emrgba(0, 0, 0, 0.2);
+    z-index: 1000 !important;
+    list-style-type: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    float: none;
+    display: block;
+
+}
+
+@media only screen and (max-width: 600px) {
+    nav.navBar li.right,
+    nav.navBar li {
+        float: none;
+    }
+
+}
+
+/*--------------------- button------------------------------ */
+
+.button {
+    text-indent: -20000em;
+    background-color: transparent;
+    background-image: url(../achtergrond/Heart.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    box-shadow: none;
+    width: 10%;
+    height: 3em;
+    margin: -4em 0 0 auto;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+}
+
+.pink {
+    background-image: url(../achtergrond/pinkheart.png);
+    transition: all 0.5s ease-in;
+}
+
+div > button {
+    background-image: url(../achtergrond/ster%20kopie.png);
+    text-indent: -20000em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    box-shadow: none;
+    width: 10%;
+    height: 3em;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+
+
+}
+
+.ster {
+    background-image: url(../achtergrond/stergroen.png);
+    transition: all 0.5s ease-in;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+.vindikleuk {
+    position: relative;
+}
+
+.vindikleuk:before {
+    content: '';
+    background-image: url(../achtergrond/pinkheart.png);
+    background-size: 1em;
+    background-repeat: no-repeat;
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    left: -1em;
+    top: .5em;
+    transition: all 1s ease-in;
+    opacity: 0;
+
+}
+
+.like:before {
+    left: 90%;
+    top: .75em;
+    opacity: 1;
+}
+
+
+/*-----section populair plus algemene instellingen article-----*/
+
+article img {
+    width: 100%;
+    overflow-y: hidden;
+    max-height: 10em;
+    min-height: 10em;
+}
+
+article {
+
+    width: 25%;
+    float: left;
+    padding: 0.5em;
+    margin: 2.6em;
+    max-height: 30em;
+    min-height: 35em;
+    border-radius: 2em;
+    background: #f8f7f7;
+    opacity: 0.8;
+
+}
+
+article p {
+    color: black;
+}
+
+artcile,
+h3 {
+    color: #2a3280;
+}
+
+article p:hover {
+    color: #e9466b;
+}
+
+article,
+h3:hover {
+    color: #e9466b;
+    cursor: pointer;
+
+}
+
+
+/*---- instellingen voor verkleinen/groten scherm  -----*/
+
+@media screen and (max-width: 992px) {
+    article {
+        width: 41%;
+        margin: 2em;
+    }
+
+}
+
+@media screen and (max-width: 710px) {
+    article {
+        width: 39%;
+        margin: 2em;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    article {
+        width: 70%;
+        float: none;
+        margin: 2em auto;
+    }
+
+}
+
+/*---------------- section verhalen voor jou ---------------*/
+
+#foryou div {
+    background-color: white;
+}
+
+#foryou h2 {
+    color: #75bd81;
+
+}
+
+#foryou p {
+    padding: 0em 1em 0em 1em;
+
+}
+
+#foryou h3 {
+    color: #75bd81;
+    text-align: center;
+
+}
+
+#foryou p:hover {
+    color: #75bd81;
+    cursor: pointer;
+
+}
+
+#foryou img {
+    width: 100%;
+    border-radius: 2em 2em 0em 0em;
+    margin: 0em;
+    padding: 0em;
+    border: 0em;
+}
+
+#foryou article {
+    background: #e9466b;
+    border: solid #e9466b 0.1em;
+    padding: 0.1em;
+    margin: 2.6em;
+    max-width: 25em;
+    min-width: 20em;
+    max-height: 30em;
+    min-height: 25em;
+
+}
+
+#foryou div {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*-------------- vind ik leuk pagina --------------------*/
+
+#vindikleuks img {
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#vindikleuks p {
+    text-align: center;
+}
+
+/*------------------ inloggen pagina -------------------*/
+
+#login section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em;
+    margin-top: 3em;
+    background: #f8f7f7;
+    opacity: 0.8;
+    padding: 2em;
+    border: 1em;
+    border-radius: 1em;
+
+}
+
+#login h2 {
+    margin: 0em 2em 2em 3em;
+    color: #2a3280;
+
+}
+
+
+
+#login label {
+
+    color: #75bd81;
+}
+
+#login input[type=text],
+input[type=password] {
+    margin: 1em 0em 1em 0em;
+    border-radius: 1em;
+    width: 100%;
+    padding: 0.5em;
+    border: 0.1em solid #ccc;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background: white;
+}
+
+#login input[type=text]:focus,
+input[type=password]:focus {
+    border: 0.3em solid #e9466b;
+    width: 110%;
+
+}
+
+
+input[type=submit] {
+    background-color: #75bd81;
+    border: 1em;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 1em;
+    padding: 1em 3em 1em 3em;
+}
+
+input[type=submit]:hover {
+    background: white;
+    color: #75bd81;
+    border: 0.1em solid #75bd81;
+}
+
+@media screen and (max-width: 600px) {
+    #login section {
+        width: 20em;
+    }
+}
+
+/*------------------- paranoia story ---------------------*/
+
+#paranoia img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #desktop {
+        display: none;
+    }
+    #smal {
+        display: none;
+    }
+    #mobiel {
+        width: 100%;
+        display: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #mobiel {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #desktop {
+        display: none;
+    }
+    #smal {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    #smal {
+        display: none;
+    }
+}
+
+/*------------------Gedownload pagina --------------------*/
+
+#gedownload section > p {
+    text-align: center;
+}
+
+/*-------------------- populairste -----------------------*/
+
+#populairste article {
+    background: white;
+    padding: 0.5em;
+    margin: 2.6em;
+    max-width: 25em;
+    min-width: 20em;
+    max-height: 30em;
+    min-height: 35em;
+
+}
+
+#populairste div {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+}
+
+#populairste article h3:first-child {
+    color: #75bd81;
+    text-align: center;
+}
